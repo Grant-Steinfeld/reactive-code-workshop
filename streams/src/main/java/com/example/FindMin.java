@@ -44,7 +44,7 @@ public class FindMin
   private void run(){
     int[] numbers = {4, 100, 13, 90, 16, 2, 88};
     int[] emptyList = {};
-    int[] numbers = { 3, 5, 8, 13, 6765, 1};
+    int[] numbers2 = { 3, 5, 8, 13, 6765, 1};
 
     findMinOldWay(numbers);
     findMinStreams(numbers);
