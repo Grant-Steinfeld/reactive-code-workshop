@@ -68,7 +68,7 @@ private void createStreamsFile(){
             .forEach(System.out::println);
 
     
-
+        // find by regex !
         Files.lines(new File(mobyPath).toPath())
             .map(s -> s.trim())
             .filter(s -> s.matches("whale"))
