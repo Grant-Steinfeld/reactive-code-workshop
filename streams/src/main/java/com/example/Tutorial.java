@@ -26,7 +26,7 @@ public class Tutorial
   }
 
   private void findDistinctSmallestStreams(int[] numbers){
-      System.out.println("add code here")
+      System.out.println("add code here");
 
       //hints use:
       //  distinct()
@@ -38,7 +38,7 @@ public class Tutorial
   }
 
   private void createIntStreams(int[] numbers){
-    System.out.println("add code here")
+    System.out.println("add code here");
 
     //hints use:
     //  of()   // from param numbers array
@@ -47,15 +47,21 @@ public class Tutorial
 }
 
 private void createStreamsOther(){
+
+    //empty stream
     Stream<String> streamEmpty = Stream.empty();
 
+    //from collections
     Collection<String> collection = Arrays.asList("a", "b", "c");
     Stream<String> streamOfCollection = collection.stream();
+
+    //from Array
+    // we know of()
     
 }
   
 private void processIntStreams(int[] numbers){
-    System.out.println("add code here")
+    System.out.println("add code here");
 
     //hints use:
     //  3 functions from findDistinctSmallestStreams() 
