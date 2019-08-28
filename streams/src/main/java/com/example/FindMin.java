@@ -37,8 +37,21 @@ public class FindMin
     //introductin lamda
     IntStream.of( numbers )
               .min()
-              .ifPresent(min -> System.out.println(min));
+              .ifPresent(min -> System.out.println("Min by Stream API with no error " + min));
               
+  }
+
+  private void summaryStatistics(int[] numbers) {
+    
+    IntSummaryStatistics stats 
+        = IntStream.of( numbers ).summaryStatistics();
+
+    System.out.println("Stats min :: " + stats.getMin());
+    System.out.println("Stats max :: " + stats.getMax());
+    System.out.println("Stats average :: " + stats.getAverage());
+    System.out.println("Stats count :: " + stats.getCount());
+    System.out.println("Stats sum :: " + stats.getSum());
+
   }
 
   private void run(){
@@ -47,6 +60,7 @@ public class FindMin
     int[] numbers2 = { 3, 5, 8, 13, 6765, 1};
 
     findMinOldWay(numbers);
+    
     findMinStreams(numbers);
 
     try {
@@ -57,6 +71,8 @@ public class FindMin
 
     findMinStreamsNoExp(emptyList);  //prints nothing
     findMinStreamsNoExp(numbers2);
+
+    summaryStatistics(numbers);
 
   }
 
