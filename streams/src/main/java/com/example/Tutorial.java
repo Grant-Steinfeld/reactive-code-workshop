@@ -71,7 +71,7 @@ private void createStreamsFile(){
 
     Files.lines(new File(mobyPath).toPath())
         .map(s -> s.trim())
-        .filter(s -> !s.matches("yourregularexpression"))
+        .filter(s -> s.matches("yourregularexpression"))
         .forEach(System.out::println);
 
 
