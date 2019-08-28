@@ -23,18 +23,31 @@ public class FindMin
   private void findMinStreams(int[] numbers) {
     
     int min = IntStream.of( numbers )
-    .min()
-    .getAsInt();
+                        .min()
+                        .getAsInt();
 
     System.out.println("Min by stream API is " + min);
 
+    // note will throw exception if min cannot be found if empty []
+
+  }
+
+  private void findMinStreamsNoExp(int[] numbers) {
+    
+    //introductin lamda
+    IntStream.of( numbers )
+              .min()
+              .ifPresent(min -> System.out.println(min));
+              
   }
 
   private void run(){
     int[] numbers = {4, 1, 13, 90, 16, 2, 0};
-
+    int[] emptyList = {};
     findMinOldWay(numbers);
     findMinStreams(numbers);
+    findMinStreams(emptyList);
+    findMinStreamsNoExp(emptyList);
 
   }
 
