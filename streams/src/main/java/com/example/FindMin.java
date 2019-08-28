@@ -45,14 +45,14 @@ public class FindMin
     int[] numbers = {4, 100, 13, 90, 16, 2, 88};
     int[] emptyList = {};
     int[] numbers = { 3, 5, 8, 13, 6765, 1};
-    
+
     findMinOldWay(numbers);
     findMinStreams(numbers);
 
     try {
       findMinStreams(emptyList);
     } catch (Exception ex) {
-      System.out.println(ex)
+      System.out.println(ex);
     }
 
     findMinStreamsNoExp(emptyList);  //prints nothing
