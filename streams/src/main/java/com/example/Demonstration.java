@@ -5,7 +5,7 @@ package com.example;
 import java.util.*; 
 import java.util.stream.*; 
   
-public final class Demonstration 
+public class Demonstration 
 { 
 
   private void run(){
