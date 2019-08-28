@@ -4,11 +4,13 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Jabberwocky.jpg/399px-Jabberwocky.jpg" width="200" align="right"/>
 </p>
 
-**Thank you to everyone that attended our session at Oracle CodeOne on Tuesday!**
+As Java is an object-oriented language that inherently supports the imperative programming style; asynchronicity presents a challenge that can turn one’s code into a nightmare. One way to deal with the complexity of asynchronicity is to introduce reactivity onto the coding level (reactive functional programming), and/or to handle it on the design and architecture level (reactive systems design).
 
-This repository contains exercises that demonstrate different ways to build reactive applications, from using common building blocks such as Reactive Streams and RxJava to employing holistic frameworks such as Lagom from Lightbend. In this up-to-your-elbows-in-code session, you can experiment with various approaches so you’ll leave with a clear understanding of what reactive programming is and what tools you can use to build reactive applications with Java.
+This workshop will introduce you to the principles that drive the movement towards Reactive Systems. We will focus primarily on Reactive Functional Programming, where we will conduct a progressive hands on coding session that will teach you how to start using Java Streams and RxJava and examples of how you might use these techniques in your software applications today.
 
-You will need a Java IDE of your choice: Eclipse, IntelliJ, VSCode, emacs or vi if you must, and an installation of maven that can pull dependencies from maven central.
+This repository contains exercises that demonstrate different ways to build reactive applications, from using common building blocks such as Java Streams, Reactive Streams with RxJava to employing holistic frameworks Akka from Lightbend. In this up-to-your-elbows-in-code session, you can experiment with various approaches so you’ll leave with a clear understanding of what functional reactive programming is and what tools you can use today to expand your Java progamming toolbelt!
+
+You will need nano, emacs or vi and use ssh to Connect to our live RedHat server where you can program live!
 
 ## Getting Started
 
