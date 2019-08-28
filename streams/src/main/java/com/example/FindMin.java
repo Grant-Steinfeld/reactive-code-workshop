@@ -46,7 +46,10 @@ public class FindMin
     int[] emptyList = {};
     findMinOldWay(numbers);
     findMinStreams(numbers);
+    try {
     findMinStreams(emptyList);
+    } catch (Exception ex) {}
+    
     findMinStreamsNoExp(emptyList);
 
   }
