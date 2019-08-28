@@ -4,8 +4,7 @@ package com.example;
 import java.util.*; 
 import java.util.stream.*; 
   
-class Demonstration 
-{ 
+
   public static void main(String args[]) 
   { 
   
@@ -48,4 +47,3 @@ class Demonstration
   
     System.out.println(even); 
   } 
-} 
