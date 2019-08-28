@@ -62,27 +62,27 @@ private void createStreamsFile(){
 
     try {
 
-    Files.lines(new File(smallPath).toPath())
-        .map(s -> s.trim())
-        .filter(s -> !s.isEmpty())
-        .forEach(System.out::println);
+        Files.lines(new File(smallPath).toPath())
+            .map(s -> s.trim())
+            .filter(s -> !s.isEmpty())
+            .forEach(System.out::println);
 
-  
+    
 
-    Files.lines(new File(mobyPath).toPath())
-        .map(s -> s.trim())
-        .filter(s -> s.matches("yourregularexpression"))
-        .forEach(System.out::println);
+        Files.lines(new File(mobyPath).toPath())
+            .map(s -> s.trim())
+            .filter(s -> s.matches("whale"))
+            .forEach(System.out::println);
 
 
 
-    //Now set a varialbe 
-    //Stream<String> lines 
-    //to load stream from large text file - mobyPath
- 
-    //apply some stream functions here!
-        //how many words?
-        //how many distinct words?
+        //Now set a varialbe 
+        //Stream<String> lines 
+        //to load stream from large text file - mobyPath
+    
+        //apply some stream functions here!
+            //how many words?
+            //how many distinct words?
 
     } catch( IOException ioex) {
         System.out.println(ioex);
