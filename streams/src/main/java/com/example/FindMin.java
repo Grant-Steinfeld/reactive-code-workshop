@@ -42,15 +42,21 @@ public class FindMin
   }
 
   private void run(){
-    int[] numbers = {4, 1, 13, 90, 16, 2, 0};
+    int[] numbers = {4, 100, 13, 90, 16, 2, 88};
     int[] emptyList = {};
+    int[] numbers = { 3, 5, 8, 13, 6765, 1};
+    
     findMinOldWay(numbers);
     findMinStreams(numbers);
+
     try {
-    findMinStreams(emptyList);
-    } catch (Exception ex) {}
-    
-    findMinStreamsNoExp(emptyList);
+      findMinStreams(emptyList);
+    } catch (Exception ex) {
+      System.out.println(ex)
+    }
+
+    findMinStreamsNoExp(emptyList);  //prints nothing
+    findMinStreamsNoExp(numbers2);
 
   }
 
