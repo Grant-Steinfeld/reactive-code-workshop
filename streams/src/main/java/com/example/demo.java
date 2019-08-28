@@ -1,4 +1,4 @@
-package com.example;
+package com.example.demo;
 
 //a simple program to demonstrate the use of stream in java 
 import java.util.*; 
