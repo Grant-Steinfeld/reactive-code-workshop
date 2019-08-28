@@ -21,7 +21,12 @@ public class FindMin
   }
 
   private void findMinStreams(int[] numbers) {
-    System.out.println("With Java 8 Streams");
+    
+    int min = IntStream.of( numbers )
+    .min()
+    .getAsInt();
+
+    System.out.println("Min by stream API is " + min);
 
   }
 
