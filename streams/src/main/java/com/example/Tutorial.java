@@ -79,7 +79,7 @@ private void processIntStreams(int[] numbers){
     findDistinctSmallestStreams(numbers);
     createIntStreams(numbers);
     createStreamsOther();
-    processIntStreams();
+    processIntStreams(numbers);
 
     
     
