@@ -77,7 +77,7 @@ private void processIntStreams(int[] numbers){
   
     findDistinctSmallestOldWay(numbers);
     findDistinctSmallestStreams(numbers);
-    createIntStreams();
+    createIntStreams(numbers);
     createStreamsOther();
     processIntStreams();
 
