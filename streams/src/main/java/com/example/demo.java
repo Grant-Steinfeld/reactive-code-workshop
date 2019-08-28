@@ -4,7 +4,7 @@ package com.example.demo;
 import java.util.*; 
 import java.util.stream.*; 
   
-class Demo 
+class Demonstration 
 { 
   public static void main(String args[]) 
   { 
