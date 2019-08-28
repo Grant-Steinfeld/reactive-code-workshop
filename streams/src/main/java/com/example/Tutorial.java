@@ -57,7 +57,45 @@ private void createStreamsOther(){
 
     //from Array
     // we know of()
+    //They can also be created out of an existing array or of a part of an array:
+    String[] arr = new String[]{"a", "b", "c", "x", "y", "z", "x"};
+    Stream<String> streamOfArrayFull = Arrays.stream(arr);
+    Stream<String> streamOfArrayPart = Arrays.stream(arr, 1, 3);
+
+    System.out.println("add code here");
+    //from streamOfArrayFull 
+        //filter out distinct x char
+
+        //count chars
+
+    Stream<String> streamBuilder =
+        Stream.<String>builder().add("a").add("b").add("c").build();
+
+    Stream<String> streamGenerated =
+        Stream.generate(() -> "streams-are-cool").limit(10);
     
+    IntStream streamOfChars = "abc".chars();
+
+    //from file
+    //Every line of the text becomes an element of the stream:
+    Path path = Paths.get("/opt/moby.txt");
+    Stream<String> streamOfStrings = Files.lines(path);
+
+    //how many words?
+
+    //find words equal whale
+
+    //Find UTF-8 charset
+    Stream<String> streamWithCharset = 
+        Files.lines(path, Charset.forName("UTF-8"));
+
+    //apply some stream functions here!
+        //how many words?
+
+        //find words equal whale
+
+
+
 }
   
 private void processIntStreams(int[] numbers){
